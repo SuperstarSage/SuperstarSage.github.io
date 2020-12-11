@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+        零基础搭建个人博客（保姆级） - 一江烟水晚风凉的博客
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="小白零基础搭建个人博客" />
+    <meta name="generator" content="Hugo 0.72.0 with theme pure" />
+    <title>零基础搭建个人博客（保姆级） - 一江烟水晚风凉的博客</title>
+    
+    
+    <link rel="stylesheet" href="https://superstarsage.github.io/css/style.min.c4bc7071f132c964c2116bca53b392933f377e5ca7b7051ed245187c621a2d3e.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/default.min.css" async>
+    
+	<link href="https://cdn.bootcdn.net/ajax/libs/tocbot/4.11.2/tocbot.min.css" rel="stylesheet" async>
+    <meta property="og:title" content="零基础搭建个人博客（保姆级）" />
+<meta property="og:description" content="小白零基础搭建个人博客" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://superstarsage.github.io/2020/06/blog_start/" />
+<meta property="article:published_time" content="2020-06-12T14:19:42+08:00" />
+<meta property="article:modified_time" content="2020-06-12T14:19:42+08:00" />
+<meta itemprop="name" content="零基础搭建个人博客（保姆级）">
+<meta itemprop="description" content="小白零基础搭建个人博客">
+<meta itemprop="datePublished" content="2020-06-12T14:19:42&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-12T14:19:42&#43;08:00" />
+<meta itemprop="wordCount" content="1116">
+
+
+
+<meta itemprop="keywords" content="教程,博客," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="零基础搭建个人博客（保姆级）"/>
+<meta name="twitter:description" content="小白零基础搭建个人博客"/>
+
+    <!--[if lte IE 9]>
+		<script src="https://cdn.bootcdn.net/ajax/libs/classlist/1.2.201711092/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+
+	  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ccdb0240478fe0332bdc4c9587828726";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/SuperstarSage" target="_blank">
+            <img class="img-circle img-rotate" src="https://superstarsage.github.io/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">一江烟水晚风凉</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+		  <h3  class="hidden-xs hidden-sm hidden-md" style="font-size:12px;">我的心愿是做一枚逆天的咸鸭蛋，闲得要命，富得流油。</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Beijing, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+				
+					<a href="/" >
+                  <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">首页</span>
+                </a>
+				
+                
+            </li>
+            <li class="menu-item menu-item-archives">
+				
+					<a href="/posts/" >
+                  <i class="icon icon-book-fill"></i>
+                  <span class="menu-title">文章</span>
+                </a>
+				
+                
+            </li>
+            <li class="menu-item menu-item-categories">
+				
+					<a href="/categories/" >
+                  <i class="icon icon-folder"></i>
+                  <span class="menu-title">分类</span>
+                </a>
+				
+                
+            </li>
+            <li class="menu-item menu-item-tags">
+				
+					<a href="/tags/" >
+                  <i class="icon icon-tags"></i>
+                  <span class="menu-title">标签</span>
+                </a>
+				
+                
+            </li>
+            <li class="menu-item menu-item-project">
+				
+					<a href="https://proj.warmday.wang/" target="_blank">
+                  <i class="icon icon-project"></i>
+                  <span class="menu-title">项目</span>
+                </a>
+				
+                
+            </li>
+            <li class="menu-item menu-item-about">
+				
+					<a href="/about/" >
+                  <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">关于</span>
+                </a>
+				
+                
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p><font size="5" face="arial" color="red">欢迎光临</font></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://superstarsage.github.io/categories/%E4%B8%AA%E4%BA%BA%E6%8A%80%E8%83%BD/" class="category-list-link">个人技能</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://superstarsage.github.io/categories/%E6%8A%80%E6%9C%AF/" class="category-list-link">技术</a><span class="category-list-count">2</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://superstarsage.github.io/tags/css/" class="tag-list-link">css</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://superstarsage.github.io/tags/%E5%8D%9A%E5%AE%A2/" class="tag-list-link">博客</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://superstarsage.github.io/tags/%E6%95%99%E7%A8%8B/" class="tag-list-link">教程</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://superstarsage.github.io/tags/%E7%BD%91%E9%A1%B5/" class="tag-list-link">网页</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://superstarsage.github.io/2020/07/web_page_full_screen/" class="title">2行代码纯css快速去除浏览器竖向滚动条（干货）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-07-08 11:25:02 &#43;0800 CST" itemprop="datePublished">2020-07-08</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://superstarsage.github.io/2020/06/blog_start/" class="title">零基础搭建个人博客（保姆级）</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-12 14:19:42 &#43;0800 CST" itemprop="datePublished">2020-06-12</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2020/06/blog_start/"
+    >零基础搭建个人博客（保姆级）</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://superstarsage.github.io/2020/06/blog_start/" class="article-date">
+  <time datetime="2020-06-12 14:19:42 &#43;0800 CST" itemprop="datePublished">2020-06-12</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/"> 技术 </a>
+  <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA%E6%8A%80%E8%83%BD/"> 个人技能 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/%E6%95%99%E7%A8%8B/"> 教程 </a>
+    <a class="article-tag-link" href="/tags/%E5%8D%9A%E5%AE%A2/"> 博客 </a>
+  </span>
+
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/2020/06/blog_start/" class="leancloud_visitors"  data-flag-title="零基础搭建个人博客（保姆级）">
+			<span class="leancloud-visitors-count">0</span>
+		</span>
+    </span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/06/blog_start/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1116字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="说明必看-">说明（必看）</h2>
+<p><strong>本教程以64位Windows系统为例，进行演示和说明，提供的安装包也是基于64位Windows的，其他系统除安装步骤不同外，基本相同。如需其他系统方式，需自行搜索。</strong></p>
+<h2 id="一准备阶段-环境的搭建-">一、准备阶段-环境的搭建</h2>
+<ul>
+<li>
+<p>安装Git：</p>
+<ol>
+<li>方式一：官网下载<a href="https://git-scm.com/" title="点击跳转" target="_blank" data-toggle="tooltip" data-placement="top"  rel="noopener">https://git-scm.com/</a>
+</li>
+<li>方式二：如果官网速度太慢，可以使用我已下载好的<a href="https://git-scm.com/" title="点击跳转" target="_blank" data-toggle="tooltip" data-placement="top"  rel="noopener">Git-2.27.0-64-bit.exe</a>
+</li>
+</ol>
+</li>
+<li>
+<p>安装Hugo：</p>
+<ol>
+<li>方式一：官网下载<a href="https://github.com/gohugoio/hugo/releases" title="点击跳转" target="_blank" data-toggle="tooltip" data-placement="top"  rel="noopener">https://github.com/gohugoio/hugo/releases</a>
+，选择对应系统的版本下载，如：hugo_0.72.0_Windows-64bit.zip</li>
+<li>方式二：如果官网速度太慢，可以使用我已下载好的<a href="https://git-scm.com/" title="点击跳转" target="_blank" data-toggle="tooltip" data-placement="top"  rel="noopener">hugo_0.72.0_Windows-64bit.zip</a>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="二安装-">二、安装</h2>
+<ol>
+<li>解压下载下来的hugo_0.72.0_Windows-64bit.zip文件，将其中的hugo.exe文件放到你想要放的地方，比如C:\Hugo\bin。</li>
+<li>将hugo.exe所在路径添加到Windows的环境变量PATH中。具体添加方法可参考Windows 10 如何添加环境变量。</li>
+<li>打开Git Bash或者Cmd或者Power Shell（推荐） 输入 hugo version 回车出现hugo static site generator相关信息表示安装完成。如下：</li>
+</ol>
+<pre><code class="language-Shell">input &gt; hugo version
+output &gt; Hugo Static Site Generator v0.72.0-8A7EF3CF windows/amd64 BuildDate: 2020-05-31T12:08:42Z
+</code></pre>
+<h2 id="三编写博客-">三、编写博客</h2>
+<ol>
+<li>选择一个心仪的目录，在Git Bash 输入hugo new site &ldquo;你的文件名字&rdquo; ，回车便可以生成一个用于存放博客的文件夹，如：myblog。</li>
+</ol>
+<pre><code class="language-Shell">input &gt; hugo new site myblog
+output &gt; Congratulations! Your new Hugo site is created in ......
+</code></pre>
+<ol start="2">
+<li>hugo没有自带主题，所以建立完文件夹后要导入主题文件。可以用git clone 的方式，也可以到相应主题的github中下载zip文件然后解压到自己博客的themes文件夹中。推荐git clone方式</li>
+</ol>
+<pre><code class="language-Shell">input &gt; git clone https://github.com/xiaoheiAh/hugo-theme-pure themes/pure
+output &gt; ......
+</code></pre>
+<ol start="3">
+<li>
+<p>Hugo配置文件放置在源文件下，并且支持三种格式：toml，yaml，yml。这个配置文件可以直接从主题文件中的exampleSite 里copy到博客文件夹下，然后进行修改。进入themes文件夹，拷贝exampleSite/config.yml文件到myblog目录下，并删除myblog目录下config.toml文件。</p>
+</li>
+<li>
+<p>在 Git Bash 中输入 hugo new posts/xxxx.md，这时候就会在文件夹 content/posts形成你要的markdown文件，打开进行编辑即可。</p>
+</li>
+</ol>
+<pre><code class="language-Shell">input &gt; hugo new posts/first_blog.md
+output &gt; ......
+</code></pre>
+<ol start="5">
+<li>在Git Bash输入hugo server -D启动，然后打开网址<a href="http://localhost:1313/" title="点我查看效果" target="_blank" data-toggle="tooltip" data-placement="top"  rel="noopener">http://localhost:1313/</a>
+ 查看</li>
+</ol>
+<pre><code class="language-Shell">input &gt; hugo server -D
+output &gt; ......
+</code></pre>
+<h2 id="三总结-">三、总结</h2>
+<ul>
+<li>至此，你的博客雏形基本完成，但距离发布还有一段路要走</li>
+<li>第一次写教程还是有些摸不清重点，但基本上无坑，所以按照我的说法捋一遍没问题</li>
+</ul>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://superstarsage.github.io/2020/06/blog_start/" title="零基础搭建个人博客（保姆级）" target="_blank" rel="external">https://superstarsage.github.io/2020/06/blog_start/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>原创声明:</strong> 转载需要注明本文地址
+    </li>
+  </ul>
+</blockquote>
+
+    </div>
+  </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="next">
+                <a href="https://superstarsage.github.io/about/"
+                    title="关于"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="qq,wechat"
+                data-mobile-sites="qq,wechat"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links"><li><a href="https://github.com/SuperstarSage" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github-fill"></i></a></li><li><a href="https://github.com/SuperstarSage" target="_blank" title="公众号" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-wechat"></i></a></li><li><a href="https://proj.warmday.wang/" target="_blank" title="其他项目" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-project"></i></a></li><li><a href="https://superstarsage.github.io/rss.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020
+	Warmday.wang
+    <div class="publishby">
+        Theme Modified from<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.staticfile.org/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://superstarsage.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://superstarsage.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/superstarsage.github.io\/',
+            CONTENT_URL: 'https:\/\/superstarsage.github.io\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://superstarsage.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/tocbot/4.11.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail,link';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+    new Valine({
+        el: '#vcomments',
+        appId: 'NOP3Jte3NTuOci10DRW3euyl-gzGzoHsz',
+        appKey: 'XsG49cIXlUNhTFmH7OVNgEi5',
+        placeholder: '来评论吧~',
+        avatar: 'wavatar',
+        meta: meta,
+        pageSize: '10' || 10,
+        visitor: true ,
+		});
+</script>
+
+
+  </body>
+</html>

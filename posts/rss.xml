@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 一江烟水晚风凉的博客</title>
+    <link>https://superstarsage.github.io/posts/</link>
+    <description>Recent content in Posts on 一江烟水晚风凉的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 08 Jul 2020 11:25:02 +0800</lastBuildDate>
+    
+        <atom:link href="https://superstarsage.github.io/posts/rss.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2行代码纯css快速去除浏览器竖向滚动条（干货）</title>
+      <link>https://superstarsage.github.io/2020/07/web_page_full_screen/</link>
+      <pubDate>Wed, 08 Jul 2020 11:25:02 +0800</pubDate>
+      
+      <guid>https://superstarsage.github.io/2020/07/web_page_full_screen/</guid>
+      <description>说明 最近在开发一个项目时，觉得滚动条的存在影响视觉效果，所以查阅了一些资料，并记录下来，方案兼容主流浏览器 举例：https://proj.w</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://superstarsage.github.io/about/</link>
+      <pubDate>Sat, 13 Jun 2020 09:59:10 +0800</pubDate>
+      
+      <guid>https://superstarsage.github.io/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>零基础搭建个人博客（保姆级）</title>
+      <link>https://superstarsage.github.io/2020/06/blog_start/</link>
+      <pubDate>Fri, 12 Jun 2020 14:19:42 +0800</pubDate>
+      
+      <guid>https://superstarsage.github.io/2020/06/blog_start/</guid>
+      <description>说明（必看） 本教程以64位Windows系统为例，进行演示和说明，提供的安装包也是基于64位Windows的，其他系统除安装步骤不同外，基本</description>
+    </item>
+    
+  </channel>
+</rss>
