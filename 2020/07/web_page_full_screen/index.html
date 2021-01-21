@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh">
   <head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="HTML,ASP,PHP,SQL">
+
+	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+	<meta name="keywords" content="博客,独立开发,一江烟水晚风凉,项目,网站,小程序,白噪音,干货" />
+	<meta name="description" content="一江烟水晚风凉的博客,专注于IT互联网，包括但不限于Go语言(golang)、Java、Swift、Python、项目管理、软件架构等" />
     <title>
         2行代码纯css快速去除浏览器竖向滚动条（干货） - 一江烟水晚风凉的博客 Orcinus orca的博客
       </title>
@@ -21,7 +28,7 @@
     
     
     <meta name="description" content="2行代码纯css快速去除浏览器竖向滚动条的方法，兼容主流浏览器" />
-    <meta name="generator" content="Hugo 0.72.0 with theme pure" />
+    <meta name="generator" content="Hugo 0.80.0 with theme pure" />
     <title>2行代码纯css快速去除浏览器竖向滚动条（干货） - 一江烟水晚风凉的博客 Orcinus orca的博客</title>
     
     
@@ -38,13 +45,14 @@
 <meta property="article:modified_time" content="2020-07-08T11:25:02+08:00" />
 <meta itemprop="name" content="2行代码纯css快速去除浏览器竖向滚动条（干货）">
 <meta itemprop="description" content="2行代码纯css快速去除浏览器竖向滚动条的方法，兼容主流浏览器">
-<meta itemprop="datePublished" content="2020-07-08T11:25:02&#43;08:00" />
-<meta itemprop="dateModified" content="2020-07-08T11:25:02&#43;08:00" />
+<meta itemprop="datePublished" content="2020-07-08T11:25:02+08:00" />
+<meta itemprop="dateModified" content="2020-07-08T11:25:02+08:00" />
 <meta itemprop="wordCount" content="348">
 
 
 
-<meta itemprop="keywords" content="教程,网页,Css," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="教程,网页,Css," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="2行代码纯css快速去除浏览器竖向滚动条（干货）"/>
 <meta name="twitter:description" content="2行代码纯css快速去除浏览器竖向滚动条的方法，兼容主流浏览器"/>
 
@@ -67,6 +75,7 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+	
   </head>
 
   
@@ -354,25 +363,25 @@ var _hmt = _hmt || [];
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h2 id="说明-">说明</h2>
+      <h2 id="说明">说明</h2>
 <p><strong>最近在开发一个项目时，觉得滚动条的存在影响视觉效果，所以查阅了一些资料，并记录下来，方案兼容主流浏览器</strong></p>
 <ul>
 <li>举例：<a href="https://proj.warmday.wang/rainyday/index.html" target="_blank" data-toggle="tooltip" data-placement="top"  rel="noopener">https://proj.warmday.wang/rainyday/index.html</a>
 </li>
 </ul>
-<h2 id="一chromium内核blink内核-">一、Chromium内核（Blink内核）</h2>
-<h3 id="代表浏览器chrome浏览器edge浏览器360极速浏览器百度浏览器国产大多数都是-">代表浏览器：Chrome浏览器、Edge浏览器、360极速浏览器、百度浏览器&hellip;(国产大多数都是)</h3>
+<h2 id="一chromium内核blink内核">一、Chromium内核（Blink内核）</h2>
+<h3 id="代表浏览器chrome浏览器edge浏览器360极速浏览器百度浏览器国产大多数都是">代表浏览器：Chrome浏览器、Edge浏览器、360极速浏览器、百度浏览器&hellip;(国产大多数都是)</h3>
 <pre><code class="language-JavaScript">::-webkit-scrollbar {
 	display:none
 }
 </code></pre>
-<h2 id="二gecko内核-">二、Gecko内核</h2>
-<h3 id="代表浏览器firefox浏览器-">代表浏览器：Firefox浏览器</h3>
+<h2 id="二gecko内核">二、Gecko内核</h2>
+<h3 id="代表浏览器firefox浏览器">代表浏览器：Firefox浏览器</h3>
 <pre><code class="language-JavaScript">html {
     scrollbar-width: none;
 }
 </code></pre>
-<h2 id="总结-">总结</h2>
+<h2 id="总结">总结</h2>
 <ul>
 <li>
 <p>实际测试的浏览器有：360极速浏览器、Chrome浏览器、Edge浏览器、115浏览器、Firefox浏览器、Safari浏览器</p>
